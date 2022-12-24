@@ -24,4 +24,9 @@ public class Person {
     private String firstname;
     private String lastname;
 
+    public Person(List<Account> accountList, String firstname, String lastname) {
+        this.accountList = accountList;
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
 }

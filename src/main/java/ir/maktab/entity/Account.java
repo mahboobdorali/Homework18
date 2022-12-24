@@ -15,7 +15,7 @@ import java.util.Date;
 @ToString
 @EqualsAndHashCode
 @Entity
-public abstract class Account {
+public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -23,6 +23,7 @@ public abstract class Account {
     private String cardNumber;
     @Column(unique = true)
     private String accountNumber;
+
     @CreationTimestamp
     @Temporal(value = TemporalType.TIMESTAMP)
     private Date openingDate;
